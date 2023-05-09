@@ -5,6 +5,11 @@
 
 def create_phone_number(num_tuple):
     # Здесь нужно написать код
+    lst = []
+    for i in num_tuple:
+        lst.append(str(i))
+    lst = "".join(lst)
+    str_phone = f"({lst[0:3]}) {lst[3:6]}-{lst[6:10]}"
     return str_phone
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ

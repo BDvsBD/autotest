@@ -13,6 +13,13 @@
 
 def max_division_by_3(num):
     # Здесь нужно написать код
+    result = num
+    for el in range(len(str(num))):
+        for j in range(10):
+            new_num = (str(num))[:el] + str(j) + (str(num))[el + 1:]
+            if int(new_num) % 3 == 0 and new_num != num and int(new_num) > int(result):
+                result = new_num
+    new_num = int(result)
     return new_num
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ

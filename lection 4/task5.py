@@ -15,6 +15,13 @@
 
 def josephus_task(num_people, kill_num):
     # Здесь нужно написать код
+    fighter = list(range(1, num_people + 1))
+    stat = 0
+    while len(fighter) > 1:
+        death = (stat + kill_num - 1) % len(fighter)
+        fighter.pop(death)
+        stat = death
+    survivor = fighter[0]
     return survivor
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ

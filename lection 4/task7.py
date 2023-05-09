@@ -4,6 +4,14 @@
 
 def move_zeros(lst):
     # Здесь нужно написать код
+    one = []
+    zero = []
+    for num in lst:
+        if num == 0:
+            zero.append(num)
+        else:
+            one.append(num)
+    lst = one + zero
     return lst
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
