@@ -38,7 +38,6 @@ def everything_for_your_cat(cats_data):
             cat_age = cat[1]
             cats_info += f'{cat_name}, {cat_age}; '
         our_str += f'{owner_name} {owner_surname}: {cats_info[:-2]}\n'
-    print(our_str)
     return our_str
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
