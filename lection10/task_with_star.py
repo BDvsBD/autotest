@@ -6,6 +6,8 @@ import pytest
 
 
 @pytest.mark.id_check(1, 2, 3)
-def test():
-    # Здесь пишем код
+def test(request):
+    marker = request.node.get_closest_marker("id_check")
+    args = marker.args
+    print(args)
     pass
